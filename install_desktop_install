@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+MY_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+SCRIPTS_DIR=$MY_DIR/scripts
+
+mkdir -p ~/.desktop-install
+echo "SCRIPTS_DIR=$SCRIPTS_DIR" > ~/.desktop-install/config
+
