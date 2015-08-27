@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+function install() {
+    INSTALL_NAME=$1
+    INSTALL_VERSION=$2
+    if [ -e ~/.desktop-install/installations/$INSTALL_NAME/$INSTALL_VERSION ]; then
+        echo "$INSTALL_NAME installation version $INSTALL_VERSION is already installed"
+    else
+        mkdir -p ~/.desktop-install/installations/$INSTALL_NAME/$INSTALL_VERSION
+        /usr/bin/env bash $SCRIPTS_DIR/install/$INSTALL_NAME
+    fi
+}
+

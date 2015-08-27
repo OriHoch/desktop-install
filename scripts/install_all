@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+source ~/.desktop-install/config
+source $SCRIPTS_DIR/base
+
+install pycharm 3
+
